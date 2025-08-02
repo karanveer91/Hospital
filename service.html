@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body><style>
+    /* Services Section Start */
+.services .boxContainer,
+.review .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 8rem;
+}
+.services .boxContainer .box {
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.9);
+  border: 0.5rem solid var(--main);
+  padding: 2.5rem;
+}
+.services .boxContainer .box:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.services .boxContainer .box i {
+  color: var(--main);
+  padding-bottom: 0.5rem;
+  font-size: 5rem;
+}
+.services .boxContainer .box:hover i {
+  transform: scale(1.5);
+}
+.services .boxContainer .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.services .boxContainer .box p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: #333;
+}
+/* Services Section End */
+/* Global Variables */
+:root {
+  --main: #ff041d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Besley", serif;
+  outline: none;
+  border: none;
+  transition: 0.2s all linear;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+*::selection {
+  background: var(--main);
+  color: #000;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+section {
+  padding: 2rem 9%;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main);
+}
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+.btn {
+  display: inline-block;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.7rem;
+  color: var(--main);
+  border-radius: 0.5rem;
+}
+.btn span {
+  background: var(--main);
+  color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: var(--main);
+  color: #fff;
+}
+.btn:hover span {
+  color: var(--main);
+  background: #fff;
+  margin-left: 1.2rem;
+}
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.heading span {
+  color: var(--main);
+  text-transform: uppercase;
+}
+/* Header/Navbar Start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.7);
+  background: #fff;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #000;
+}
+.header .logo i {
+  color: var(--main);
+}
+.header .navbar a {
+  color: #333;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+}
+.header .navbar a:hover {
+  color: var(--main);
+}
+#MenuBtn {
+  background: #eee;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--main);
+  padding: 1rem 1.5rem;
+  border-radius: 0.6rem;
+  display: none;
+}
+/* Header/Navbar End */
+
+
+</style>
+    <!-- Services Section Start -->
+    <section id="Services" class="services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <center>
+        <div class="boxContainer">
+
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Physiotherapy</h3>
+                <p>Physiotherapy is a health care profession that focuses on the assessment, diagnosis, treatment, and prevention of injury, illness,....</p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>Cardiology</h3>
+                <p>Cardiology is a medical specialty dealing with disorders of the heart, as well as some parts of the circulatory system. The field... </p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-pills"></i>
+                <h3>Dermatology</h3>
+                <p>Dermatology is a branch of medicine focused on the diagnosis and treatment of conditions of the skin, hair, nails, and mucous...</p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+            <div class="box">
+                <i class="fas fa-procedures"></i>
+                <h3>Health Card</h3>
+                <p>Internal medicine is a medical specialty focused on the diagnosis, treatment, and prevention of diseases in adults. It involves the use of medical knowledge and clinical skills to diagnose and provide care for adult patients with complex...</p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Executive Health Checkups</h3>
+                <p>Internal medicine is a medical specialty focused on the diagnosis, treatment, and prevention of diseases in adults. It involves the use of medical knowledge and clinical skills to diagnose and...</p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-ambulance"></i>
+                <h3>Home Care Services</h3>
+                <p>Internal medicine is a medical specialty focused on the diagnosis, treatment, and prevention of diseases in adults. It involves the use of medical knowledge and clinical skills to diagnose and...</p>
+                <a href="#" class="btn">Learn More <span class="fas fa-chevron-right"></span></a>
+            </div>
+        </div>
+        </center>
+    </section>
+    <!-- Services Section End -->
+</body>
+</html>
